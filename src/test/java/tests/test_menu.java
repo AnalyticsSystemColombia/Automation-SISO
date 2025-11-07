@@ -19,7 +19,6 @@ public class test_menu {
 	String PATH_DRIVER = "C://Users//user//eclipse-workspace//IntroduccionSelenium//src//chrome//chromedriver.exe";
 	String TIPO_DRIVER = "webdriver.chrome.driver";
 	String URL = "http://localhost/Proyectos/SISO//login";
-	
 	@BeforeMethod
 	public void setUp() 
 	{
@@ -39,13 +38,10 @@ public class test_menu {
 		driver.findElement(By.id("buttom")).click();
 		driver.navigate().to("http://localhost/Proyectos/SISO//dashboard");
 		System.out.println(driver.findElements(By.tagName("a")).size());
-		
 		WebElement footerdriver=driver.findElement(By.xpath("(//ul[@class='app-menu'])[1]"));// Limiting webdriver scope
-		
 		System.out.println(footerdriver.findElements(By.tagName("a")).size());
 		WebElement coloumndriver=footerdriver.findElement(By.xpath("(//ul[@class='app-menu'])[1]"));
 		System.out.println(coloumndriver.findElements(By.tagName("a")).size());
-		
 		for(int i=0;i<coloumndriver.findElements(By.tagName("a")).size();i++)
 		{
 			String clickonlinkTab=Keys.chord(Keys.CONTROL,Keys.ENTER);
@@ -59,7 +55,6 @@ public class test_menu {
 		   driver.switchTo().window(it.next());
 		   System.out.println(driver.getTitle());
 		}
-
 	}
 	@AfterMethod
 	public void tearDown() 
