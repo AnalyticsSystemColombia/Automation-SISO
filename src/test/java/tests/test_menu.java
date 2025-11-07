@@ -14,20 +14,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class test_menu {
-	WebDriver driver;
-	String PATH_DRIVER = "C://Users//user//eclipse-workspace//IntroduccionSelenium//src//chrome//chromedriver.exe";
-	String TIPO_DRIVER = "webdriver.chrome.driver";
-	String URL = "http://localhost/Proyectos/SISO//login";
-	@BeforeMethod
-	public void setUp() 
-	{
-		System.setProperty(TIPO_DRIVER, PATH_DRIVER);
-	    driver =new ChromeDriver();
-		driver.get(URL);
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
-	}
+import configuracion.conectDriver;
+
+public class test_menu extends conectDriver {
+	
 	@Test
 	public void test_menu() throws InterruptedException
 	{
