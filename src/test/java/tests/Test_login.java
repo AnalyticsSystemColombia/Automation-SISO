@@ -2,6 +2,9 @@ package tests;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import configuracion.conectDriver;
+
 import org.testng.annotations.BeforeMethod;
 
 import java.time.Duration;
@@ -17,25 +20,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Test_login {
-	WebDriver driver;
-	String PATH_DRIVER = "C://Users//user//eclipse-workspace//test_SISO//src//test//resources//WebDriver//chromedriver.exe";
-	String TIPO_DRIVER = "webdriver.chrome.driver";
-	String URL = "http://localhost/Proyectos/SISO//login";
+public class Test_login extends conectDriver {
 	
-	@BeforeMethod
-	public void setUp() 
-	{
-		System.setProperty(TIPO_DRIVER, PATH_DRIVER);
-	    driver =new ChromeDriver();
-		driver.get(URL);
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
-	}
 	@Test
 	
 	public void test_initSesion() throws InterruptedException
 	{
+	
 		WebElement element = driver.findElement(By.id("txtEmail"));
 		element.sendKeys("harold_uruena@yahoo.com");
 		
@@ -61,11 +52,7 @@ public class Test_login {
 		txtcateDesc.sendKeys("Gafas importadas");
 		Thread.sleep(2000);
 	}
-	@AfterMethod
-	public void tearDown() 
-	{
-		driver.quit();
-	}
+	
 	///https://www.youtube.com/watch?v=5kQm0vAH4Aw&t=77s
 
 }

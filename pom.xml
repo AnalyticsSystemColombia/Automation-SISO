@@ -20,4 +20,46 @@
 		    </dependency>
 	
   </dependencies>
+  <profiles>
+		<profile>
+			<id>Regresion</id>
+			<build>
+			 <defaultGoal>install</defaultGoal>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.2.5</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>testNGSuites/testng.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		<profile>
+			<id>Smoke</id>
+			<build>
+			 <defaultGoal>install</defaultGoal>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.0.0-M7</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>testNGSuites/testng_Smoke.xml</suiteXmlFile>
+								</suiteXmlFiles>
+						   </configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+	</profiles>
 </project>
