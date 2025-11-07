@@ -22,6 +22,7 @@ public class test_menu extends Config {
 	@Test
 	public void test_menu() throws InterruptedException
 	{
+		///logueo
 		WebElement element = driver.findElement(By.id("txtEmail"));
 		element.sendKeys("harold_uruena@yahoo.com");
 		WebElement element2 = driver.findElement(By.id("txtPassword"));
@@ -47,9 +48,5 @@ public class test_menu extends Config {
 		   System.out.println(driver.getTitle());
 		}
 	}
-	@AfterMethod
-	public void tearDown() 
-	{
-		driver.quit();
-	}
+	
 }
