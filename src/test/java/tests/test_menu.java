@@ -14,9 +14,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import configuracion.conectDriver;
+import Utilidades.Config;
 
-public class test_menu extends conectDriver {
+
+public class test_menu extends Config {
 	
 	@Test
 	public void test_menu() throws InterruptedException

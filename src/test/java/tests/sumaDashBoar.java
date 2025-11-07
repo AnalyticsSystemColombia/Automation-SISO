@@ -24,7 +24,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class sumaDashBoar {
 	WebDriver driver;
-	String PATH_DRIVER = "C://Users//user//eclipse-workspace//IntroduccionSelenium//src//chrome//chromedriver.exe";
+	String PATH_DRIVER = "C://Users//user//eclipse-workspace//test_SISO//src//test//resources//WebDriver//chromedriver.exe";
 	String TIPO_DRIVER = "webdriver.chrome.driver";
 	String URL = "http://localhost/Proyectos/SISO//login";
 	
