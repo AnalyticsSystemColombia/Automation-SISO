@@ -6,8 +6,8 @@
       <class name="tests.sumaDashBoar">
         <methods>
           <include name="test_initSesion"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- tests.sumaDashBoar -->
     </classes>
