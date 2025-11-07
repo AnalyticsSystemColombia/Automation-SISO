@@ -1,67 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-07T15:47:43 COT" name="Default suite" finished-at="2025-11-07T15:47:50 COT" duration-ms="6301">
+  <suite started-at="2025-11-07T15:56:18 COT" name="Default suite" finished-at="2025-11-07T15:56:28 COT" duration-ms="9402">
     <groups>
     </groups>
-    <test started-at="2025-11-07T15:47:43 COT" name="Default test" finished-at="2025-11-07T15:47:50 COT" duration-ms="6301">
-      <class name="tests.sumaDashBoar">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.sumaDashBoar@66f57048]" started-at="2025-11-07T15:47:43 COT" name="setUp" finished-at="2025-11-07T15:47:46 COT" duration-ms="2786" status="PASS">
+    <test started-at="2025-11-07T15:56:18 COT" name="Default test" finished-at="2025-11-07T15:56:28 COT" duration-ms="9402">
+      <class name="tests.Test_login">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Test_login@66f57048]" started-at="2025-11-07T15:56:18 COT" name="setUp" finished-at="2025-11-07T15:56:21 COT" duration-ms="2466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test_initSesion()[pri:0, instance:tests.sumaDashBoar@66f57048]" started-at="2025-11-07T15:47:46 COT" name="test_initSesion" finished-at="2025-11-07T15:47:49 COT" duration-ms="3236" status="FAIL">
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[For input string: "52,500"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "52,500"
-at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-at java.base/java.lang.Double.parseDouble(Double.java:651)
-at tests.sumaDashBoar.getFormatterAmount(sumaDashBoar.java:75)
-at tests.sumaDashBoar.test_initSesion(sumaDashBoar.java:67)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
+        <test-method signature="test_initSesion()[pri:0, instance:tests.Test_login@66f57048]" started-at="2025-11-07T15:56:21 COT" name="test_initSesion" finished-at="2025-11-07T15:56:27 COT" duration-ms="6575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_initSesion -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.sumaDashBoar@66f57048]" started-at="2025-11-07T15:47:49 COT" name="tearDown" finished-at="2025-11-07T15:47:50 COT" duration-ms="219" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Test_login@66f57048]" started-at="2025-11-07T15:56:27 COT" name="tearDown" finished-at="2025-11-07T15:56:28 COT" duration-ms="290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.sumaDashBoar -->
+      </class> <!-- tests.Test_login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
