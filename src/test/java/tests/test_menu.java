@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 
 public class test_menu {
 	WebDriver driver;
-	String PATH_DRIVER = "C://Users//user//eclipse-workspace//IntroduccionSelenium//src//chrome//chromedriver.exe";
+	String PATH_DRIVER = "C://Users//user//eclipse-workspace//test_SISO//src//test//resources//WebDriver//chromedriver.exe";
 	String TIPO_DRIVER = "webdriver.chrome.driver";
 	String URL = "http://localhost/Proyectos/SISO//login";
 	@BeforeMethod
