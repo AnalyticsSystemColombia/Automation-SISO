@@ -2,6 +2,9 @@ package tests;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import configuracion.conectDriver;
+
 import org.testng.annotations.BeforeMethod;
 
 import java.io.ObjectInputStream.GetField;
@@ -22,22 +25,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class sumaDashBoar {
-	WebDriver driver;
-	String PATH_DRIVER = "C://Users//user//eclipse-workspace//IntroduccionSelenium//src//chrome//chromedriver.exe";
-	String TIPO_DRIVER = "webdriver.chrome.driver";
-	String URL = "http://localhost/Proyectos/SISO//login";
+public class sumaDashBoar extends conectDriver {
 	
-	@BeforeMethod
-	public void setUp() 
-	{
-		
-		System.setProperty(TIPO_DRIVER, PATH_DRIVER);
-	    driver =new ChromeDriver();
-		driver.get(URL);
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
-	}
+	
+	
 	@Test
 	
 	public void test_initSesion() throws InterruptedException
